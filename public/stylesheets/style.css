@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+#messagesDiv{
+  border: 2px solid red;
+  font-size: 19px;
+}
+
+button{
+  color: red;
+}
