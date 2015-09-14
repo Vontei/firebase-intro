@@ -7,8 +7,19 @@ a {
   color: #00B7FF;
 }
 
+h1{
+  text-align: center;
+}
+
+#chatbox{
+  width: 40%;
+  border: 2px solid yellow;
+  padding: 5px;
+}
+
 #messagesDiv{
-  border: 2px solid red;
+  height: 300px;
+  overflow: scroll;
   font-size: 19px;
 }
 

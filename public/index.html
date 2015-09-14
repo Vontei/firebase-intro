@@ -2,16 +2,20 @@
 <html>
   <head>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
     <script src='javascripts/data.js'></script>
     <meta charset="utf-8">
+    <link rel='stylesheet' href='./stylesheets/style.css'>
     <title></title>
   </head>
   <body>
     <h1>Nick Nack Chatty Hack, Feed the App a Line.</h1>
+    <div id='chatbox'>
     <div id='messagesDiv'></div>
-    <input type='text' id='nameInput' placeholder='Name'>
+  </div>
+    <input type='text' autofocus id='nameInput' placeholder='Name'>
     <input type='text' id='messageInput' placeholder='Message'>
     <button id='submit'>Add Comment</button>
+
   </body>
 </html>
