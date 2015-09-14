@@ -2,17 +2,35 @@
 <html>
   <head>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script> -->
+
     <meta charset="utf-8">
     <link rel='stylesheet' href='./stylesheets/style.css'>
     <title>Hack Chat</title>
   </head>
   <body>
-    <h1>Nick Nack Chatty Hack, Feed the App a Line.</h1>
+    <h3><span class="label label-primary"> Nick Nack Chatty Hack Feed the App a Line</span></h3>
     <div id='chatbox'>
-    <div id='messagesDiv'></div>
+    <div id='messagesDiv' class='panel panel-primary'>
+        <div class="panel-body">
+          <ul class='list-group'>
+          </ul>
+        </div>
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+        <input class='form-control' type='text' autofocus id='nameInput' placeholder='User Name' aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group">
+        <input type='text' id='messageInput' class='form-control'  aria-describedby="basic-addon1" placeholder='Message'>
+        <span class="input-group-addon glyphicon glyphicon-chevron-right" id="basic-addon1"></span>
+      </div>
   </div>
-    <input type='text' autofocus id='nameInput' placeholder='Name'>
-    <input type='text' id='messageInput' placeholder='Message'>
+    <!-- <input type='text' autofocus id='nameInput' placeholder='Name'>
+    <input type='text' id='messageInput' placeholder='Message'> -->
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
     <script src='./javascripts/data.js'></script>

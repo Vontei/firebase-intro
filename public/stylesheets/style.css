@@ -7,14 +7,29 @@ a {
   color: #00B7FF;
 }
 
-h1{
+.userName{
+  color: blue;
+}
+
+h3{
   text-align: center;
 }
 
 #chatbox{
-  width: 40%;
-  border: 2px solid yellow;
-  padding: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+li:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+.panel-body{
+  overflow: scroll;
+}
+
+.panel-heading{
+  position: fixed;
 }
 
 #messagesDiv{

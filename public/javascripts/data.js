@@ -13,6 +13,8 @@ myData.on('child_added', function(snapshot) {
   displayChatMessage(message.name, message.text);
 });
 function displayChatMessage(name, text) {
-  $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
+  $('<li/>').addClass('list-group-item').text(text)
+  .prepend($('<em/>').addClass('userName').text(" " + name+': ')).prepend($('<span/>').addClass('glyphicon glyphicon-console'))
+  .appendTo($('.list-group'));
   $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
 };
